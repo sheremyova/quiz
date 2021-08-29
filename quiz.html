@@ -6,41 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English level test</title>
     <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-<div>
-    <div id="quiz">
-      
-        <div class="start_button">
-          <button>Start quiz</button>
-        </div>
+<body>
+    <div class="start_button">
+      <button>Start quiz</button>
+    </div>
 
-        <div class="info_box">
-          <h2>Rules</h2>  
+    <div class="info_box">
+      <h2>Rules</h2>  
 
-        <ol class="info_list">
-          <li class="info">You will have only <span>15 seconds</span> per each question.</li>
-          <li class="info">Once you select the answer you can't reselect it.</li>
-          <li class="info">You can't select any option once time goes off.</li>
-          <li class="info">You can't exit the quiz while you are playing.</li>
-          <li class="info">You will get 1 point for each correct answer.</li>
-        <ol/>
-
+    <ol class="info_list">
+      <li class="info">You will have only <span>15 seconds</span> per each question.</li>
+      <li class="info">Once you select the answer you can't reselect it.</li>
+      <li class="info">You can't select any option once time goes off.</li>
+      <li class="info">You can't exit the quiz while you are playing.</li>
+      <li class="info">You will get 1 point for each correct answer.</li>
+    </ol>
+     
+    
     <div class="buttons">
         <button class="quit">Exit quiz</button>
         <button class="continue">Continue</button>
     </div>
+    </div>
   
-    <div class="quiz_box">
-      <h2 class="title">
-        English level test 
-      </h2>
-      <form>
-        We went to the market ___ some vegetables
-        <input type="radio" name="question-one" value=""> to buy
-        <input type="radio" name="question-one" value=""> for buy
-        <input type="radio" name="question-one" value=""> for to buy
-        <input type="radio" name="question-one" value=""> for bying
+  <div class="quiz_box">
+    
+    <header>
+        <div class="title">English level test</div>
+    </header>
+
+    <form>
+        <div class="que_text">
+          <span>We went to the market <span class="gap"></span> some vegetables.</p></span>
+        </div>
+        
+        <div class="option_list">
+          <div class="option">
+            <label>
+            <input type="radio" name="question_one" value="to buy">
+            <span>to buy</span>
+            </label>
+            
+            <div class="icon tick">
+              <i class="fas fa-check"></i>
+            </div>
+          </div>
+  
+          <div class="option">
+            <label>
+            <input type="radio" name="question_one" value="for buy">
+            <span>for buy</span>
+            </label>
+            <div class="icon cross">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+  
+          <div class="option">
+            <label>
+            <input type="radio" name="question_one" value="for to buy">
+            <span>for to buy</span>
+            </label>
+          </div>
+  
+          <div class="option">
+            <label>
+            <input type="radio" name="question_one" value="for buying">
+            <span>for buying</span>
+            </label>
+          </div>
       </form>
+   
+    <footer>
+        <div class="total">
+          <span><p>2</p>of<p>5</p>Tasks</span>
+        </div>
+        <button class="next_button">Next Question</button>
+    </footer>
+</div>
+
 </body>
 <script src="quiz.js"></script>
 </html>
