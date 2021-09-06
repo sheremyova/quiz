@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="quiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-<body>
+<div>
     <div class="start_button">
-      <button>Start quiz</button>
+      <button>Start test</button>
     </div>
 
     <div class="info_box">
@@ -26,8 +26,8 @@
      
     
     <div class="buttons">
-        <button class="quit">Exit quiz</button>
-        <button class="continue">Continue</button>
+        <button class="quit">Exit test</button>
+        <button class="restart">Continue</button>
     </div>
     </div>
   
@@ -39,11 +39,11 @@
 
     <form>
         <div class="que_text">
-          <span>We went to the market <span class="gap"></span> some vegetables.</p></span>
+          <!-- <span>We went to the market <span class="gap"></span> some vegetables.</span> -->
         </div>
         
         <div class="option_list">
-          <div class="option">
+          <!-- <div class="option">
             <label>
             <input type="radio" name="question_one" value="to buy">
             <span>to buy</span>
@@ -76,7 +76,8 @@
             <input type="radio" name="question_one" value="for buying">
             <span>for buying</span>
             </label>
-          </div>
+            </div> -->
+        </div>
       </form>
    
     <footer>
@@ -86,8 +87,24 @@
         <button class="next_button">Next Question</button>
     </footer>
 </div>
+</div>
 
+<div class="result_box">
+  <div class="icon">
+      <i class="fas fa-crown"></i>
+  </div>
+  <div class="congrats_text">You've completed the Test!</div>
+  <div class="score_text">
+      <span>You got <p>2</p> out of 5</span>
+  </div>
+  <div class="buttons">
+      <button class="restart">Try again</button>
+      <button class="quit">Quit Test</button>
+  </div>
+</div>
+
+<script src="js/quiz.js"></script>
+<script src="js/questions.js"></script>
 </body>
-<script src="quiz.js"></script>
 </html>
 
